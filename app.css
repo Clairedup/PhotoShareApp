@@ -1,5 +1,6 @@
 :root {
-    background-color: rgb(223, 232, 241);
+    background-image: url(Logo.png);
+    background-color: rgb(172, 210, 248);
     font-size: 65%;
 
 }
@@ -20,8 +21,9 @@ h4 {
 }
 
 h1{
-    font-size: 5.4rem;
-    color: #333 ;
+    font-size: 6rem;
+    font-weight: bold;
+    color: rgb(20, 74, 182) ;
     margin-bottom: 5rem;
 }
 
@@ -32,8 +34,10 @@ h1 > span{
 
 h2{
     font-size: 4.2rem;
+    font-weight: bold;
     margin-bottom: 4rem;
     font-weight: 700;
+    color: rgb(112, 133, 250);
 }
 
 h3{
@@ -91,7 +95,7 @@ h3{
   
   .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(246, 247, 248, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
   }
