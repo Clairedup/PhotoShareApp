@@ -8,7 +8,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-/* Variables */
+
 :root {
   --main-color: #090797;
   --main-light-color: #2063c9;
@@ -16,7 +16,7 @@
   --text-color: #1a1d22;
   --bg-color: #fff;
 }
-/* Custom Scroll Bar */
+
 html::-webkit-scrollbar {
   width: 0.5rem;
   background: #474040;

@@ -8,11 +8,40 @@
     <link rel="Stylesheet" href="HomePage.css" >
 </head>
 <body>
-    <div class="container">
-        <div id="Home" class="flex-center flex-column">
-            <h1> Home page </h1>   
+    <header>
+        <div class="nav container"> 
+        
+            <a href="#" class="logo">
+                <img src="Logo.png" alt="">
+            </a>
+          
+            <ul class="navbar">
+                
+                <li><a href="HomePage.html" class="active">Home</a></li>
+                <li><a href="upload.html">Upload</a></li>
+            </ul>
+            
+            <div class="nav-icons">
+                <a href="#" class="user"><i class='bx bxs-user'></i></a>
+               
+                <i class='bx bx-menu' id="menu-icon" ></i>
+            </div>
         </div>
+    </header>
+
+    <div class="copyright">
+        <p>&#169; Photo Share All Right Reserved</p>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoader", () => {
+            const recentImageDataUrl = localStorage.getItem("recent-image");
+
+            if(recentImageDataUrl){
+                document.querySelector("#imgPreview").setAttribute("src", recentImageDataUrl)
+            }
+        });
+    </script>
 
 </body>
+
 </html>
